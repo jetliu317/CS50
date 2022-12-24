@@ -13,15 +13,14 @@ def slow_down():
     print("Okay,", "I", "admit", "that", "I", "speak", "too", "fast", sep="...")
 
 # #face emoji
-def hello(to = ":)"):
-    print("Hello", to)
-hello()
-hello("🙂")
-
-def goodbye(too=":("):
-    print("goodbye", too)
-goodbye()
-goodbye("🙁")
+def hello():
+    saying = input()
+    if ":)" in saying:
+        print(saying.replace(":)","🙂"))
+    elif ":(" in saying:
+        print(saying.replace(":(","🙁"))
+    else:
+        print(saying)
 
 # E=mc^2
 M = int(input("M="))
