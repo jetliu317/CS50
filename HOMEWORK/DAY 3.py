@@ -20,12 +20,18 @@ change_owed = abs(amount_due)
 print("Change owed :", change_owed)
 
 #twwttr
-answer = input("Input :")
-print("Output: ", end = "")
+def main_2():
+    cap = input("Input :")
+    print("Output: ", shorten(cap))
 
-for letter in answer:
-    if not letter in ["a", "e", "i", "o","u", "A", "E", "I", "O", "U"]:
-        print(letter)
+def shorten(answer):
+    for letter in answer:
+        item = ''
+        if not letter in ["a", "e", "i", "o","u", "A", "E", "I", "O", "U"]:
+            item += letter
+    return item
+
+main_2()
         
 # vanity plate
 def main():

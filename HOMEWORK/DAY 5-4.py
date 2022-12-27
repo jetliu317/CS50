@@ -1,6 +1,7 @@
 # Bitcoin Index
 import sys
 import requests
+<<<<<<< HEAD
 import json
 
 if len(sys.argv) == 2:
@@ -23,3 +24,6 @@ except (IndexError,requests.RequestException):
     print('Request Exception')
     sys.exit(1)
     
+=======
+
+>>>>>>> 7818342 (Add existing file)
