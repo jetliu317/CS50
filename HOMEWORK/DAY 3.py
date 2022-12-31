@@ -1,3 +1,4 @@
+
 # CamelCase
 letters = input("camelCase :")
 print("snake_case:", end = "")
@@ -20,13 +21,20 @@ change_owed = abs(amount_due)
 print("Change owed :", change_owed)
 
 #twwttr
-answer = input("Input :")
-print("Output: ", end = "")
+def main_2():
+    cap = input("Input :")
+    print("Output: ", shorten(cap))
 
-for letter in answer:
-    if not letter in ["a", "e", "i", "o","u", "A", "E", "I", "O", "U"]:
-        print(letter)
-        
+def shorten(answer):
+    for letter in answer:
+        item = ''
+        if not letter in ["a", "e", "i", "o","u", "A", "E", "I", "O", "U"]:
+            item += letter
+    return item
+
+main_2()
+
+from curses.ascii import isalpha
 # vanity plate
 def main():
     plate = input("Plate: ")
@@ -38,7 +46,7 @@ def main():
 def is_valid(s):
     if 2 <= len(s) <= 6:
         return False
-    if s[0].isalpha() == False or s[1].isalpha() == False:
+    if s[0].isalpha == False or s[1].isalpha() == False:
         return False
     i = 0
     while 0 > len(s):

@@ -1,6 +1,7 @@
 #Fuel Gauge
 def main():
     fraction = get_fraction()
+    print(get_fraction(fraction))
     
 def get_fraction():
     while True:
@@ -9,20 +10,19 @@ def get_fraction():
             x, y = fraction.split("/")
             fraction = int(x) / int(y)
             if fraction == 0.75:
-                print("75%")
+                return "75%"
             elif fraction == 0.50:
-                print("50%")
+                return "50%"
             elif fraction == 0.25:
-                print("25%")
+                return "25%"
             elif fraction >= 0.9:
-                print("FULL")
+                return "FULL"
             elif fraction <= 0.1:
-                print("EMPTY")
+                return"EMPTY"
         except (ValueError, ZeroDivisionError) :
             pass
         else:
             break
-    return fraction
 
 # main()
 
@@ -51,7 +51,7 @@ def order():
                 total_amount += menu[item]
                 print("Total : $", total_amount)
             elif item not in menu:
-                False
+                pass
         except EOFError :
             break    
 

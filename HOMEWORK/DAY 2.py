@@ -12,20 +12,17 @@ def is_42(n):
 # main()
 
 # Greeting
-def greet():
-    x = input("Greeting : ")
-    if greet_with_hello(x):
-        print("$0")
-    elif greet_with_h(x):
-        print("$20")
+def main_3():
+    greet = input('Greet :')
+    print(greeting(greet))
+    
+def greeting(greet):
+    if greet == 'hello' or greet == 'Hello':
+        return "$0"
+    elif greet[0] == 'h' or greet[0] == 'H':
+        return "$20"
     else:
-        print("$100")
-  
-def greet_with_hello(n2):
-    return True if n2 == "hello" else False
-
-def greet_with_h(n1):
-    return True if n1[0] == "H" or n1[0] == "h" else False
+       return "$100"
         
 # greet()
 
