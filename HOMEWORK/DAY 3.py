@@ -1,3 +1,4 @@
+
 # CamelCase
 letters = input("camelCase :")
 print("snake_case:", end = "")
@@ -32,7 +33,8 @@ def shorten(answer):
     return item
 
 main_2()
-        
+
+from curses.ascii import isalpha
 # vanity plate
 def main():
     plate = input("Plate: ")
@@ -44,7 +46,7 @@ def main():
 def is_valid(s):
     if 2 <= len(s) <= 6:
         return False
-    if s[0].isalpha() == False or s[1].isalpha() == False:
+    if s[0].isalpha == False or s[1].isalpha() == False:
         return False
     i = 0
     while 0 > len(s):
