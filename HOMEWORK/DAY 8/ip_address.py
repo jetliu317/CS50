@@ -1,4 +1,3 @@
-from operator import truediv
 import re
 import sys
 
@@ -6,7 +5,7 @@ def main():
     print(validate(input("IPv4 Address: ")))
 
 def validate(ip):
-    if re.search(r'^[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+$', ip):
+    if re.search(r'[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+', ip):
         list_of_numbers = ip.split('.')
         for numbers in list_of_numbers:
             if int(numbers) < 0 or int(numbers) > 255:
