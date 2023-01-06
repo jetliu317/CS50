@@ -12,6 +12,7 @@ class PDF():
         self._pdf.image('shirtificate.png', w=self._pdf.epw)
         self._pdf.text(x=47.5, y=140, txt = f'{name} TOOK CS50')
         self._pdf.output('shirtificate.pdf')
+        
 PDF('Richard')
 
 # def main():
