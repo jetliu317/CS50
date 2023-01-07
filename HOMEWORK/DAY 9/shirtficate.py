@@ -13,7 +13,7 @@ class PDF():
         self._pdf.text(x=47.5, y=140, txt = f'{name} TOOK CS50')
         self._pdf.output('shirtificate.pdf')
         
-PDF('Richard')
+PDF('Jet')
 
 # def main():
 #     title()
