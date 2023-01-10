@@ -6,10 +6,8 @@ def main():
     #     print(sheep(i))
         
 def sheep(n):
-    flock = []
     for i in range(n):
-        flock.append('🐑'* i)
-    return flock
+        yield '🐑' * i #(yield is for massive data)
     # return '🐑' * n
 
 if __name__ == '__main__':
